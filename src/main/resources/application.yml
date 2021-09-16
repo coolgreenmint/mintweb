@@ -1,0 +1,22 @@
+# 设置当前spring的模式
+spring:
+  profiles:
+    active: dev
+
+# 设置调试模式
+debug: true
+---
+# 正式环境
+server:
+  port: 8081
+
+spring:
+  profiles: online
+
+
+---
+# 开发模式
+server:
+  port: 8082
+spring:
+  profiles: dev
