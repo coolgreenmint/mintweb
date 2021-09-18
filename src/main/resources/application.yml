@@ -4,7 +4,7 @@ spring:
     active: dev
 
 # 设置调试模式
-debug: true
+debug: false
 ---
 # 正式环境
 server:
@@ -17,6 +17,9 @@ spring:
 ---
 # 开发模式
 server:
-  port: 8082
+  port: 8899
 spring:
   profiles: dev
+  # 关闭模板引擎的缓存
+  thymeleaf:
+    cache: false
