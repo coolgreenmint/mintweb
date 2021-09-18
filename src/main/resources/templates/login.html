@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <title>登录页面 - 光年(Light Year Admin)后台管理系统模板</title>
+    <title>登录页面</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
-    <meta name="keywords" content="LightYear,光年,后台模板,后台管理系统,光年HTML模板">
-    <meta name="description" content="LightYear是一个基于Bootstrap v3.3.7的后台管理系统的HTML模板。">
-    <meta name="author" content="yinqi">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/materialdesignicons.min.css}" rel="stylesheet">
+    <link th:href="@{/css/style.min.css}" rel="stylesheet">
     <style>
         .lyear-wrapper {
             position: relative;
@@ -61,41 +58,47 @@
     <div class="lyear-login">
         <div class="login-center">
             <div class="login-header text-center">
-                <a href="index.html"> <img alt="light year admin" src="images/logo-sidebar.png"> </a>
+                <img alt="light year admin" th:src="@{images/logo-sidebar.png}">
             </div>
             <form action="#!" method="post">
                 <div class="form-group has-feedback feedback-left">
-                    <input type="text" placeholder="请输入您的用户名" class="form-control" name="username" id="username"/>
+                    <input type="text" th:placeholder="#{login.username.tip}" class="form-control" name="username"
+                           id="username"/>
                     <span class="mdi mdi-account form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <div class="form-group has-feedback feedback-left">
-                    <input type="password" placeholder="请输入密码" class="form-control" id="password" name="password"/>
+                    <input type="password" th:placeholder="#{login.userpwd.tip}" class="form-control" id="password"
+                           name="password"/>
                     <span class="mdi mdi-lock form-control-feedback" aria-hidden="true"></span>
                 </div>
                 <div class="form-group has-feedback feedback-left row">
                     <div class="col-xs-7">
-                        <input type="text" name="captcha" class="form-control" placeholder="验证码">
+                        <input type="text" name="captcha" class="form-control"
+                               th:placeholder="#{login.input.validatecode}">
                         <span class="mdi mdi-check-all form-control-feedback" aria-hidden="true"></span>
                     </div>
                     <div class="col-xs-5">
                         <img src="images/captcha.png" class="pull-right" id="captcha" style="cursor: pointer;"
-                             onclick="this.src=this.src+'?d='+Math.random();" title="点击刷新" alt="captcha">
+                             onclick="this.src=this.src+'?d='+Math.random();" th:title="#{login.input.reload}"
+                             th:alt="#{login.input.validatecode}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-block btn-primary" type="button" onclick="location.href='index.html'">立即登录
+                    <button class="btn btn-block btn-primary" type="button" onclick=""
+                            th:text="#{login.button.login}">
                     </button>
                 </div>
             </form>
             <hr>
             <footer class="col-sm-12 text-center">
-                <p class="m-b-0">Copyright © 2019 <a href="http://lyear.itshubao.com">IT书包</a>. All right reserved</p>
+                <p class="m-b-0">Copyright © [[${year}]] <a href="http://lyear.itshubao.com">[[${company}]]</a>. All
+                    right reserved</p>
             </footer>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript" src="@{/js/bootstrap.min.js}"></script>
 <script type="text/javascript">;</script>
 </body>
 </html>

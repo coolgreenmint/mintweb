@@ -15,6 +15,9 @@ spring:
 
 
 ---
+webinfo:
+  year: 2020
+  company: mint
 # 开发模式
 server:
   port: 8899
@@ -23,3 +26,5 @@ spring:
   # 关闭模板引擎的缓存
   thymeleaf:
     cache: false
+  messages:
+    basename: i18n.Application_Resource
