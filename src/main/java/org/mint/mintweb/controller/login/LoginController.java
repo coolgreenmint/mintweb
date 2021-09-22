@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @ClassName: LoginController
@@ -25,6 +27,16 @@ public class LoginController {
         model.addAttribute("company", webInfo.getCompany());
 
         return "login";
+    }
+
+    @RequestMapping("/login")
+    public String login(@RequestParam("username") String userName, @RequestParam("password") String userPwd, Model model) {
+        if ("123456".equals(userPwd)) {
+            return "index";
+        } else {
+            model.addAttribute("msg", "用户名或密码错误！");
+            return "login";
+        }
     }
 
 }
