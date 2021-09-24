@@ -4,26 +4,70 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e431667-89fe-4cfa-9512-fab5d0b84311" name="Changes" comment="添加国际化资源">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/Interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/mvc/MyLocalResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/index/IndexController.java" afterDir="false" />
+    <list default="true" id="3e431667-89fe-4cfa-9512-fab5d0b84311" name="Changes" comment="添加404 和 500页面">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/commons/common.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mintweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mintweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/Interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/Interceptor/LoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/mvc/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/mvc/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear-config-system.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear-config-system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear-config-upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear-config-upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_switch.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_forms_switch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_chartjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_colorpicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_colorpicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_datepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_datepicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_jconfirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_jconfirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_notify.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_notify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_sliders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_sliders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_tags_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_js_tags_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_add_doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_add_doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_config.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_config.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_edit_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_edit_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_rabc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_pages_rabc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_alerts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_cards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_modals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tooltips_popover.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_tooltips_popover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lyear_ui_typography.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,22 +111,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/error" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\mintweb\src\main\resources\templates\error" />
       <recent name="D:\java\mintweb\src\main\resources\static" />
       <recent name="D:\java\mintweb\src\main\resources" />
       <recent name="D:\java\mintweb\src\main\resources\templates" />
       <recent name="D:\java\mintweb\src\main\resources\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\mintweb\src\main\resources\templates\error" />
       <recent name="D:\java\mintweb\src\main\resources\templates" />
       <recent name="D:\java\mintweb\src\main\resources" />
     </key>
@@ -173,7 +219,8 @@
       <workItem from="1631759391006" duration="15671000" />
       <workItem from="1631786057929" duration="19729000" />
       <workItem from="1631935383086" duration="14355000" />
-      <workItem from="1632273445482" duration="17707000" />
+      <workItem from="1632273445482" duration="23531000" />
+      <workItem from="1632368077010" duration="15156000" />
     </task>
     <task id="LOCAL-00001" summary="添加学习路线图">
       <created>1631761253744</created>
@@ -196,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631955252281</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加登录拦截器  和模拟登录功能">
+      <created>1632302854562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632302854562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +273,9 @@
     <MESSAGE value="添加学习路线图" />
     <MESSAGE value="添加页面模板" />
     <MESSAGE value="添加国际化资源" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加国际化资源" />
+    <MESSAGE value="添加登录拦截器  和模拟登录功能" />
+    <MESSAGE value="添加404 和 500页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加404 和 500页面" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -28,3 +28,7 @@ spring:
     cache: false
   messages:
     basename: i18n.Application_Resource
+  #设置热部署方式
+  devtools:
+    restart:
+      enabled: true

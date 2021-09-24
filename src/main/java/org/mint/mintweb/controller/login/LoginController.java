@@ -30,13 +30,18 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
-    public String login(@RequestParam("username") String userName, @RequestParam("password") String userPwd, Model model) {
+    public String login(@RequestParam(value = "username", required = false) String userName,
+                        @RequestParam(value = "password", required = false) String userPwd,
+                        Model model) {
         if ("123456".equals(userPwd)) {
-            return "index";
+            //封装信息到前台
+            model.addAttribute("year", webInfo.getYear());
+            model.addAttribute("company", webInfo.getCompany());
+
+            return "redirect:/main.html";
         } else {
             model.addAttribute("msg", "用户名或密码错误！");
             return "login";
         }
     }
-
 }
