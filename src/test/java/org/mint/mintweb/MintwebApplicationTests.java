@@ -18,8 +18,10 @@ class MintwebApplicationTests {
 
     @Test
     void contextLoads() {
-        String sql = "select * from student";
-        System.out.println(jdbcTemplate.queryForList(sql));
+//        String sql = "select * from student";
+//        System.out.println(jdbcTemplate.queryForList(sql));
+
+        System.out.println(dataSource.getClass());
     }
 
 }

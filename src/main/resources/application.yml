@@ -41,7 +41,11 @@ spring:
     testOnBorrow: false
     testOnReturn: false
 
+
   #设置热部署方式
   devtools:
     restart:
       enabled: true
+mybatis:
+  type-aliases-package: org.mint.mintweb.dao
+  mapper-locations: classpath:mybatis/mapper/*.xml

@@ -19,12 +19,9 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 //无参构造函数
 @NoArgsConstructor
-public class SysUserLogin {
+public class Student {
     private Integer id;
     private Integer stuage;
-    private String username;
+    private String stuname;
     private String stuclass;
-    private Date adddate;
-    private Timestamp addtime;
-    private Timestamp addtimes;
 }

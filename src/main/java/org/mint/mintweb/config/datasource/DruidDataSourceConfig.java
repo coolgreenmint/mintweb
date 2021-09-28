@@ -53,17 +53,17 @@ public class DruidDataSourceConfig {
      *
      * @return
      */
-    @Bean
-    public FilterRegistrationBean a() {
-        FilterRegistrationBean bean = new FilterRegistrationBean();
-
-        Map<String, String> params = new HashMap<>();
-
-        //此处放置配置参数
-        params.put("", "");
-
-        bean.setInitParameters(params);
-        return bean;
-    }
+//    @Bean
+//    public FilterRegistrationBean a() {
+//        FilterRegistrationBean bean = new FilterRegistrationBean();
+//
+//        Map<String, String> params = new HashMap<>();
+//
+//        //此处放置配置参数
+//        params.put("", "");
+//
+//        bean.setInitParameters(params);
+//        return bean;
+//    }
 
 }

@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e431667-89fe-4cfa-9512-fab5d0b84311" name="Changes" comment="添加404 和 500页面">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/datasource/DruidDataSourceConfig.java" afterDir="false" />
+    <list default="true" id="3e431667-89fe-4cfa-9512-fab5d0b84311" name="Changes" comment="添加jdbc支持  增加druid数据库连接池和监控界面">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/student.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mintweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mintweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/mvc/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/mvc/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/index/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/dao/SysUserLoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/dao/SysUserLoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/pojo/SysUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/pojo/SysUserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/datasource/DruidDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/config/datasource/DruidDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/dao/SysUserLoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/pojo/SysUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mint/mintweb/pojo/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/mint/mintweb/MintwebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/mint/mintweb/MintwebApplicationTests.java" afterDir="false" />
     </list>
@@ -43,6 +40,7 @@
         <option value="HTML File" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -76,6 +74,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -109,7 +108,7 @@
       <recent name="D:\java\mintweb\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MintwebApplicationTests">
+  <component name="RunManager" selected="Spring Boot.MintWebApplication">
     <configuration name="MyLocalResolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mint.mintweb.config.mvc.MyLocalResolver" />
       <module name="mintweb" />
@@ -232,7 +231,7 @@
       <workItem from="1632368077010" duration="15390000" />
       <workItem from="1632619230500" duration="1376000" />
       <workItem from="1632722425572" duration="4708000" />
-      <workItem from="1632793656865" duration="17711000" />
+      <workItem from="1632793656865" duration="21359000" />
     </task>
     <task id="LOCAL-00001" summary="添加学习路线图">
       <created>1631761253744</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632471930856</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加jdbc支持  增加druid数据库连接池和监控界面">
+      <created>1632819350876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632819350876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +300,8 @@
     <MESSAGE value="添加国际化资源" />
     <MESSAGE value="添加登录拦截器  和模拟登录功能" />
     <MESSAGE value="添加404 和 500页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加404 和 500页面" />
+    <MESSAGE value="添加jdbc支持  增加druid数据库连接池和监控界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加jdbc支持  增加druid数据库连接池和监控界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
