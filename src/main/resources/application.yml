@@ -1,33 +1,46 @@
-# 设置当前spring的模式
-spring:
-  profiles:
-    active: dev
-
-# 设置调试模式
-debug: false
----
-# 正式环境
-server:
-  port: 8081
-
-spring:
-  profiles: online
-
-
----
+#网站信息
 webinfo:
   year: 2020
   company: mint
-# 开发模式
+
+#服务端口
 server:
   port: 8899
-spring:
-  profiles: dev
+
   # 关闭模板引擎的缓存
+spring:
   thymeleaf:
     cache: false
   messages:
     basename: i18n.Application_Resource
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lightyear?useUnicode=true&characterEncoding=utf-8
+    username: mint
+    password: mint1989
+
+    # 此处为druid 特有的配置需要有配置类进行接收
+    # 初始连接数
+    initialSize: 5
+    # 最小连接池数量
+    minIdle: 10
+    # 最大连接池数量
+    maxActive: 20
+    # 配置获取连接等待超时的时间
+    maxWait: 60000
+    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    timeBetweenEvictionRunsMillis: 60000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 300000
+    # 配置一个连接在池中最大生存的时间，单位是毫秒
+    #maxEvictableIdleTimeMillis: 900000
+    # 配置检测连接是否有效
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+
   #设置热部署方式
   devtools:
     restart:

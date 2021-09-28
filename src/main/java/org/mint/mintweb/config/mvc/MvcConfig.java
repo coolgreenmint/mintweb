@@ -34,7 +34,7 @@ public class MvcConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         //将自己写的拦截器加入springmvc
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**").
-                excludePathPatterns("/", "/login", "/i18n/**", "/css/**", "/fonts/**", "/images/**", "/js/**");
+                excludePathPatterns("/", "/login", "/i18n/**", "/css/**", "/fonts/**", "/images/**", "/js/**", "/druid/**");
     }
 
     //添加资源映射

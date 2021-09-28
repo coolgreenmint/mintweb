@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
@@ -19,9 +20,11 @@ import java.sql.Timestamp;
 //无参构造函数
 @NoArgsConstructor
 public class SysUserLogin {
-    private String uuid;
-    private String userName;
-    private String userPwd;
-    private String lastLoginIP;
-    private Timestamp lastLoginTime;
+    private Integer id;
+    private Integer stuage;
+    private String username;
+    private String stuclass;
+    private Date adddate;
+    private Timestamp addtime;
+    private Timestamp addtimes;
 }
