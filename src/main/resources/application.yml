@@ -7,6 +7,7 @@ webinfo:
 server:
   port: 8899
 
+
   # 关闭模板引擎的缓存
 spring:
   thymeleaf:
@@ -46,6 +47,7 @@ spring:
   devtools:
     restart:
       enabled: true
+
 mybatis:
   type-aliases-package: org.mint.mintweb.dao
   mapper-locations: classpath:mybatis/mapper/*.xml

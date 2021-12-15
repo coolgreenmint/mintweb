@@ -2,6 +2,7 @@ package org.mint.mintweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * @ClassName: MintWebApplication
@@ -24,6 +25,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     6. 它会给容器中导入非常多的自动配置类 （xxxautoconfiguration）, 就是给容器中导入这个场景需要的所有组件 ， 并配置好这些组件 ；
     7. 有了自动配置类 ， 免去了我们手动编写配置注入功能组件等的工作；
  */
+@ServletComponentScan
 @SpringBootApplication
 public class MintWebApplication {
     public static void main(String[] args) {
